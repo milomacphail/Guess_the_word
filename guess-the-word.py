@@ -23,4 +23,15 @@ while finished == False:
 
     if list(master) == right:
         print("You guessed all the letters! Great work!")
-        finished = True
+        print("Would you like to keep playing?")
+
+        decision = input()
+        if decision == "yes":
+            print("Enter a new word.")
+            master = input()
+            word = list(master)
+            length = len(word)
+            right = list("_" * length)
+        if decision == "no":
+            print("Thanks for playing!")
+            finished = True
