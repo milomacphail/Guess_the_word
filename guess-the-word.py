@@ -1,4 +1,5 @@
-master = "tnetennba"
+print("Enter a word.")
+master = input()
 
 word = list(master)
 length = len(word)
@@ -20,6 +21,6 @@ while finished == False:
 
     print(right)
 
-    if list(master == right):
+    if list(master) == right:
         print("You guessed all the letters! Great work!")
         finished = True
